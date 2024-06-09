@@ -1,0 +1,86 @@
+<style>
+    html, body {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Gradient background */
+        color: #343a40; /* Text color */
+        padding-bottom: 50px; /* Padding for footer */
+    }
+    .navbar {
+        background-color: #ffffff; /* Navbar background color */
+        border-bottom: 2px solid #007bff; /* Navbar bottom border color */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Navbar box shadow */
+    }
+    .navbar-brand {
+        color: #343a40; /* Navbar brand color */
+        transition: color 0.3s ease; /* Navbar brand color transition */
+    }
+    .navbar-brand:hover {
+        color: #0056b3; /* Change color on hover */
+    }
+    .navbar-toggler {
+        border-color: #343a40; /* Navbar toggle button color */
+    }
+    .nav-link {
+        color: #343a40 !important; /* Navbar link color */
+        transition: color 0.3s ease; /* Navbar link color transition */
+    }
+    .nav-link:hover {
+        color: #0056b3 !important; /* Change color on hover */
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Bootstrap Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       .logo{
+           width: 50px;
+           height: 50px;
+           margin-right: 10px;
+           border-radius: 50%;
+       }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <img class="navbar-brad logo"  src="/static/images/download.png" alt="Logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        
+            {% if session.username %}
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item  ">
+                <a class="nav-link" href="login">Login</a>
+            </li>
+
+            <li class="nav-item  ">
+                <a class="nav-link" href="/signup">Signup</a>
+            </li>
+            {% endif %}
+          
+        </ul>
+    </div>
+</nav>
+

@@ -1,0 +1,13 @@
+Flask
+numpy
+Pillow
+scikit-image
+tensorflow
+cloudinary
+python-dotenv
+pymongo
+bcrypt
+Flask-Mail 
+itsdangerous
+pymongo 
+passlib

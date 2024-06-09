@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cotton  Disease Predictor</title>
+    <!-- Include header styles -->
+    {% include 'header.html' %}
+    <style>
+        .main-title {
+            color: #007bff; /* Header color */
+            margin-bottom: 20px; /* Add space below the header */
+        }
+        .content-text {
+            color: #343a40; /* Text color */
+            font-size: 24px; /* Increase font size */
+            line-height: 1.6; /* Increase line height for better readability */
+            margin-bottom: 20px; /* Add space below paragraphs */
+        }
+        .important-word {
+            color: #007bff; /* Color for important words */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <marquee behavior="scroll" direction="left"><h1 class="main-title">Welcome to Cotton  Disease Predictor</h1></marquee>
+            <p class="content-text"><span class="important-word">Cotton  Disease Predictor</span> is an innovative application designed to assist cotton farmers in diagnosing diseases in their crops effectively.</p>
+            <p class="content-text">Our system utilizes advanced machine learning techniques to analyze images of cotton plants and accurately predict any diseases present.</p>
+            <p class="content-text1"><span class="important-word">Key features</span> of Cotton  Disease Predictor:</p>
+            <ul class="feature-list">
+                <li class="feature-item">Engineered with cutting-edge machine learning algorithms for disease prediction.</li>
+                <li class="feature-item">Trained on a comprehensive dataset of over 1500 images, achieving a classification accuracy of 90%.</li>
+                <li class="feature-item">Collaborated with agricultural experts and farmers to ensure practical utility and effectiveness in real-world scenarios.</li>
+                <li class="feature-item">Provides farmers with instant disease diagnosis and recommended actions through a user-friendly web interface.</li>
+            </ul>
+            <p class="content-text">Experience the future of agriculture with <span class="important-word">Cotton  Disease Predictor</span> - revolutionizing the way cotton diseases are detected and managed.</p>
+
+            <div>
+                <a class="btn btn-primary mb-5" href="/predict">Predict Cotton  Disease</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Include footer -->
+{% include 'footer.html' %}
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
